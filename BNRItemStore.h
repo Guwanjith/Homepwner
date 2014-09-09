@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class BNRItem;
 
 @interface BNRItemStore : NSObject
 
 +(instancetype)sharedStore;
+-(BNRItem *)createItem;
+-(NSArray *)allItems;
 
 @end
