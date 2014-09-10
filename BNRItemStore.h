@@ -12,7 +12,10 @@
 @interface BNRItemStore : NSObject
 
 +(instancetype)sharedStore;
+
+@property (nonatomic, readonly, copy) NSArray *allItems;
+
 -(BNRItem *)createItem;
--(NSArray *)allItems;
+-(void)removeItem:(BNRItem *)item;
 
 @end
