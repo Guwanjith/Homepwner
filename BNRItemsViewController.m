@@ -108,7 +108,7 @@ numberOfRowsInSection:(NSInteger)section
 }
 
 -(void)tableView:(UITableView *)tableView
-commitEditingStyle:(UITableViewCellEditingStyle)
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     //If the table view is asking to commit a delete command
@@ -118,7 +118,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath;
         [[BNRItemStore sharedStore] removeItem:item];
         
         //Also remove that row from the table view with an animation
-        [tableView deleteRowsAtIndexPaths:@[indexPath withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath withRowAnimation:UITableViewRowAnimationFade]];
     }
 }
 @end
