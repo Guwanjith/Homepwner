@@ -63,6 +63,9 @@ numberOfRowsInSection:(NSInteger)section
     
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:@"UITableViewCell"];
+    
+    UIView *header = self.headerView;
+    [self.tableView setTableHeaderView:header];
 }
 
 -(IBAction)addNewItem :(id)sender
@@ -72,7 +75,31 @@ numberOfRowsInSection:(NSInteger)section
 
 -(IBAction)toggleEditingMode:(id)sender
 {
-    
+    //If you are currently in editing mode
+    if (self.isEditing) {
+        //Change text of button to inform user of state
+        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+        
+        //Turn off editing mode
+        [self setEditing: NO animated:YES];
+    }else{
+        
+        //Change text of button to inform user of state
+        [sender setTitle:@"Done" forState:UIControlStateNormal];
+        
+        //Enter editing mode
+        [self setEditing:YES animated:YES];
+    }
+}
+
+-(UIView *)headerView
+{
+    //If you have not loaded the headerview yet
+    if (!_headerView) {
+        //Load HeaderView.xib
+        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
+    }
+    return _headerView;
 }
 
 @end
