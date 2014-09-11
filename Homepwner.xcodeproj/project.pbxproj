@@ -137,9 +137,9 @@
 				F2BAEA1219BEF82800EEE04B /* BNRAppDelegate.m */,
 				F2C4F25B19C19D3000F7ED19 /* BNRDetailViewController.h */,
 				F2C4F25C19C19D3000F7ED19 /* BNRDetailViewController.m */,
+				F2C4F25D19C19D3000F7ED19 /* BNRDetailViewController.xib */,
 				F2C4F26019C1C35300F7ED19 /* BNRImageStore.h */,
 				F2C4F26119C1C35300F7ED19 /* BNRImageStore.m */,
-				F2C4F25D19C19D3000F7ED19 /* BNRDetailViewController.xib */,
 				F2BAEA1419BEF82800EEE04B /* Images.xcassets */,
 				F2BAEA0919BEF82800EEE04B /* Supporting Files */,
 			);
