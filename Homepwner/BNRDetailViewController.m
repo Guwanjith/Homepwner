@@ -42,4 +42,18 @@
     self.dateLabel.text = [dateFormatter stringFromDate:item.dateCreated];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    //Clear first responder
+    [self.view endEditing:YES];
+    
+    //"Save" changes to item
+    BNRItem *item = self.item;
+    item.itemName = self.namefield.text;
+    item.serialNumber = self.serialNumberField.text;
+    item.valueInDollars = [self.valueField.text intValue];
+}
+
 @end
