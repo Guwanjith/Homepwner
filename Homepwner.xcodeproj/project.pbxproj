@@ -25,6 +25,7 @@
 		F2BAEA3919BEFC4F00EEE04B /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BAEA3819BEFC4F00EEE04B /* BNRItemStore.m */; };
 		F2C4F25E19C19D3000F7ED19 /* BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C4F25C19C19D3000F7ED19 /* BNRDetailViewController.m */; };
 		F2C4F25F19C19D3000F7ED19 /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C4F25D19C19D3000F7ED19 /* BNRDetailViewController.xib */; };
+		F2C4F26219C1C35300F7ED19 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C4F26119C1C35300F7ED19 /* BNRImageStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		F2C4F25B19C19D3000F7ED19 /* BNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDetailViewController.h; sourceTree = "<group>"; };
 		F2C4F25C19C19D3000F7ED19 /* BNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDetailViewController.m; sourceTree = "<group>"; };
 		F2C4F25D19C19D3000F7ED19 /* BNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDetailViewController.xib; sourceTree = "<group>"; };
+		F2C4F26019C1C35300F7ED19 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
+		F2C4F26119C1C35300F7ED19 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				F2BAEA1219BEF82800EEE04B /* BNRAppDelegate.m */,
 				F2C4F25B19C19D3000F7ED19 /* BNRDetailViewController.h */,
 				F2C4F25C19C19D3000F7ED19 /* BNRDetailViewController.m */,
+				F2C4F26019C1C35300F7ED19 /* BNRImageStore.h */,
+				F2C4F26119C1C35300F7ED19 /* BNRImageStore.m */,
 				F2C4F25D19C19D3000F7ED19 /* BNRDetailViewController.xib */,
 				F2BAEA1419BEF82800EEE04B /* Images.xcassets */,
 				F2BAEA0919BEF82800EEE04B /* Supporting Files */,
@@ -270,6 +275,7 @@
 			files = (
 				F2C4F25E19C19D3000F7ED19 /* BNRDetailViewController.m in Sources */,
 				F2BAEA3919BEFC4F00EEE04B /* BNRItemStore.m in Sources */,
+				F2C4F26219C1C35300F7ED19 /* BNRImageStore.m in Sources */,
 				F2BAEA3319BEF97A00EEE04B /* BNRItemsViewController.m in Sources */,
 				F2BAEA3619BEFB3F00EEE04B /* BNRItem.m in Sources */,
 				F2BAEA0F19BEF82800EEE04B /* main.m in Sources */,

@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homepwner/BNRDetailViewController.m"
-            timestampString = "432125477.776128"
+            timestampString = "432127815.074903"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "@implementation BNRDetailViewController"
             landmarkType = "3">
          </BreakpointContent>

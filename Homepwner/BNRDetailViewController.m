@@ -11,6 +11,8 @@
 
 @interface BNRDetailViewController ()
 
+    <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *namefield;
 @property (weak, nonatomic) IBOutlet UITextField *serialNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
@@ -32,6 +34,12 @@
     }else{
         imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
+    imagePicker.delegate = self;
+    
+    //Place image picker on the screen
+    [self presentViewController:imagePicker
+                       animated:YES
+                     completion:NULL];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -82,4 +90,18 @@
     [_serialNumberField resignFirstResponder];
     [_namefield resignFirstResponder];
 }
+
+-(void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+        //Get picked image from info dictionary
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    //Put that image onto the screen
+    self.imageView.image = image;
+    
+    //Take image picker off the screen - need to dismiss method
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end
