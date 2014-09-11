@@ -36,6 +36,8 @@
         //Set this bar button item as the right item in the navigationItem
         navItem.rightBarButtonItem = bbi;
         
+        //Create a new edit bar button to replace the edit button
+        navItem.leftBarButtonItem = self.editButtonItem;
         }
     return self;
 }
