@@ -10,6 +10,7 @@
                 <outlet property="imageView" destination="Fm8-im-lE5" id="f4p-Ao-sqI"/>
                 <outlet property="namefield" destination="XzU-V8-tDX" id="B7W-KU-03n"/>
                 <outlet property="serialNumberField" destination="OMU-qq-dce" id="urC-DS-t8k"/>
+                <outlet property="toolbar" destination="eqY-ws-YHU" id="mha-gs-EuG"/>
                 <outlet property="valueField" destination="5Ny-JX-C4w" id="Uq7-48-Ej3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -78,6 +79,17 @@
                     <rect key="frame" x="20" y="235" width="280" height="249"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-ws-YHU">
+                    <rect key="frame" x="0.0" y="518" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="RJq-ZT-MWZ">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="OMJ-bc-gG0"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
