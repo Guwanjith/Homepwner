@@ -62,4 +62,10 @@
     self.navigationItem.title = _item.itemName;
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_valueField resignFirstResponder];
+    [_serialNumberField resignFirstResponder];
+    [_namefield resignFirstResponder];
+}
 @end
